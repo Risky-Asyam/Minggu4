@@ -12,7 +12,8 @@ import android.view.View;
 public class Menu extends AppCompatActivity {
 
     Context ctx = this;
-    private LinearLayout btn_constraint, btn_framelayout, btn_linearlayout, btn_relativelayout, btn_materialdesign, btn_scrollview, btn_scrollviewhorizontal, btn_tabellayout;
+    private LinearLayout btn_constraint, btn_framelayout, btn_linearlayout, btn_relativelayout,
+            btn_materialdesign, btn_scrollview, btn_scrollviewhorizontal, btn_tabellayout, btn_list, btn_recycleview, btn_fragment;
 
 
     @Override
@@ -92,7 +93,32 @@ public class Menu extends AppCompatActivity {
             }
         });
 
+        btn_list = findViewById(R.id.btn_list);
+        btn_list.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(ctx, list_item.class);
+                startActivity(intent);
+            }
+        });
 
+        btn_recycleview = findViewById(R.id.btn_recycleview);
+        btn_recycleview.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(ctx, recycle.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_fragment = findViewById(R.id.btn_fragment);
+        btn_fragment.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(ctx, Fragment_Example.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

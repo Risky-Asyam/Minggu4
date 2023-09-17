@@ -9,9 +9,10 @@
         android:layout_height="wrap_content"
         android:text="DASHBOARD"
         android:gravity="center"
-        android:textSize="20dp"
+        android:textSize="30dp"
         android:textColor="@color/black"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
 
     <!--BARIS PERTAMA-->
     <LinearLayout
@@ -60,6 +61,29 @@
                 android:src="@drawable/baseline_bluetooth_24"/>
         </LinearLayout>
     </LinearLayout>
+    <!--NAMA BARIS PERTAMA-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Constraint Layout"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frame Layout"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Linear Layout"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
     <!--BARIS KEDUA-->
     <LinearLayout
         android:layout_width="match_parent"
@@ -106,6 +130,29 @@
                 android:src="@drawable/baseline_laptop_mac_24"/>
         </LinearLayout>
     </LinearLayout>
+    <!--NAMA BARIS KEDUA-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relative Layout"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Material Design"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scroll View"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
     <!--BARIS KETIGA-->
     <LinearLayout
         android:layout_width="match_parent"
@@ -138,6 +185,109 @@
                 android:layout_gravity="center"
                 android:src="@drawable/baseline_restaurant_menu_24"/>
         </LinearLayout>
+        <!--lINGKARAN KETIGA-->
+        <LinearLayout
+            android:id="@+id/btn_list"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/circle_yellow">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_show_chart_24"/>
+        </LinearLayout>
     </LinearLayout>
+    <!--NAMA BARIS KETIGA-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scroll Horizontal   "
+            android:layout_margin="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tabel Layout        "
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List View"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    <!--BARIS KETIGA-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <!--lINGKARAN PERTAMA-->
+        <LinearLayout
+            android:id="@+id/btn_recycleview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/circle_red">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_recycling_24"/>
+        </LinearLayout>
+        <!--lINGKARAN KEDUA-->
+        <LinearLayout
+            android:id="@+id/btn_fragment"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/circle_green">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_checklist_rtl_24"/>
+        </LinearLayout>
+        <!--lINGKARAN KETIGA-->
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/circle_yellow">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_show_chart_24"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--NAMA BARIS KETIGA-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recycle View       "
+            android:layout_margin="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment        "
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List View"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
 </LinearLayout>
