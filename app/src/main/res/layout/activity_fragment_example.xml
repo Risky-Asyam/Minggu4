@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Fragment_Example">
+    tools:context=".Fragment_Example"
+    android:paddingHorizontal="20dp">
 
     <Button
         android:id="@+id/firstFragment"
@@ -14,7 +15,8 @@
         android:layout_height="wrap_content"
         android:text="First Fragment"
         android:textColor="@color/white"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        />
 
     <Button
         android:id="@+id/secondFragment"
