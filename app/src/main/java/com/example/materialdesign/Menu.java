@@ -13,7 +13,8 @@ public class Menu extends AppCompatActivity {
 
     Context ctx = this;
     private LinearLayout btn_constraint, btn_framelayout, btn_linearlayout, btn_relativelayout,
-            btn_materialdesign, btn_scrollview, btn_scrollviewhorizontal, btn_tabellayout, btn_list, btn_recycleview, btn_fragment;
+            btn_materialdesign, btn_scrollview, btn_scrollviewhorizontal, btn_tabellayout,
+            btn_list, btn_recycleview, btn_fragment, btn_impintent, btn_expintent;
 
 
     @Override
@@ -116,6 +117,24 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(ctx, Fragment_Example.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_impintent = findViewById(R.id.btn_impintent);
+        btn_impintent.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(ctx, ImpIntentApp.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_expintent = findViewById(R.id.btn_expintent);
+        btn_expintent.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(ctx, ExpIntent.class);
                 startActivity(intent);
             }
         });

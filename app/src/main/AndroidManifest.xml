@@ -6,23 +6,43 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="Menu"
+        android:icon="@drawable/logopolije"
+        android:label="TugasBKPM"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialDesign"
         tools:targetApi="31">
         <activity
+            android:name=".ActivitySecond"
+            android:exported="false"
+            android:label="Explicit Intent"/>
+        <activity
+            android:name=".ExpIntent"
+            android:exported="false"
+            android:label="Explicit Intent"/>
+        <activity
+            android:name=".ImpIntentApp"
+            android:exported="true"
+            android:label="Intent Implicit">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Fragment_Example"
             android:exported="false"
-            android:label="Fragment"/>
+            android:label="Fragment" />
         <activity
             android:name=".recycle"
             android:exported="false"
-            android:label="Recycle View"/>
+            android:label="Recycle View" />
         <activity
             android:name=".list_item"
             android:exported="false"
-            android:label="List View"/>
+            android:label="List View" />
         <activity
             android:name=".Menu"
             android:exported="true">
@@ -35,35 +55,35 @@
         <activity
             android:name=".ScrollViewHorizontal"
             android:exported="false"
-            android:label="Scroll View Horizontal"/>
+            android:label="Scroll View Horizontal" />
         <activity
             android:name=".ScrollView"
             android:exported="false"
-            android:label="Scroll View"/>
+            android:label="Scroll View" />
         <activity
             android:name=".TabelLayout"
             android:exported="false"
-            android:label="Tabel Layout"/>
+            android:label="Tabel Layout" />
         <activity
             android:name=".RelativeLayout"
             android:exported="false"
-            android:label="Relative Layout"/>
+            android:label="Relative Layout" />
         <activity
             android:name=".FrameLayout"
             android:exported="false"
-            android:label="Frame Layout"/>
+            android:label="Frame Layout" />
         <activity
             android:name=".TugasLinear"
             android:exported="false"
-            android:label="Linear Layout"/>
+            android:label="Linear Layout" />
         <activity
             android:name=".ConstraintLayout"
             android:exported="false"
-            android:label="Constraint Layout"/>
+            android:label="Constraint Layout" />
         <activity
             android:name=".MaterialDesign"
             android:exported="false"
-            android:label="Material Design"/>
+            android:label="Material Design" />
     </application>
 
 </manifest>
